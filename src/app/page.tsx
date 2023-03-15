@@ -1,8 +1,6 @@
-import { Inter } from 'next/font/google'
+import { type NextPage } from 'next'
 
-const inter = Inter({ subsets: ['latin'] })
-
-export default function Home() {
+const Home: NextPage = () => {
   return (
     <main>
       <h1 className='mb-4 text-3xl font-bold text-red-600 underline'>
@@ -11,3 +9,5 @@ export default function Home() {
     </main>
   )
 }
+
+export default Home
