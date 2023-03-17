@@ -1,5 +1,6 @@
 export * from './Button'
 export * from './DropdownMenu'
+export * from './Toast'
 export { default as Heading } from './Heading'
 export { default as Paragraph } from './Paragraph'
 export { default as SignInButton } from './SignInButton'
