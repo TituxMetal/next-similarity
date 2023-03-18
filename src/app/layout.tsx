@@ -9,14 +9,15 @@ import '~/styles/globals.css'
 const inter = Inter({
   preload: false,
   subsets: ['latin'],
-  weight: ['300', '500', '700', '900']
+  weight: ['300', '500', '700', '900'],
+  variable: '--font-inter'
 })
 
 const RootLayout = ({ children }: { children: ReactNode }) => {
   return (
     <html
       lang='en'
-      className={cn('bg-slate-50 text-slate-900 antialiased', inter.className)}
+      className={cn('bg-slate-50 text-slate-900 antialiased', inter.variable)}
     >
       <body className='min-h-screen bg-slate-50 antialiased dark:bg-slate-900'>
         <Providers>
