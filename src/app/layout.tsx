@@ -6,7 +6,10 @@ import Toaster from '~/components/ui/Toast'
 import { cn } from '~/lib'
 import '~/styles/globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['300', '500', '700', '900']
+})
 
 const RootLayout = ({ children }: { children: ReactNode }) => {
   return (
