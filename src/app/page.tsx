@@ -34,6 +34,7 @@ const Home: NextPage = () => {
               className='img-shadow object-contain'
               quality={100}
               fill
+              sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw'
               src='/typewriter.png'
               alt='typewriter.png'
             />
