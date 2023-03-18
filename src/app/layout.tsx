@@ -6,9 +6,7 @@ import Toaster from '~/components/ui/Toast'
 import '~/styles/globals.css'
 
 const inter = Inter({
-  preload: false,
   subsets: ['latin'],
-  weight: ['300', '500', '700', '900'],
   variable: '--font-inter'
 })
 
