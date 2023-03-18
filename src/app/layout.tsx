@@ -7,6 +7,7 @@ import { cn } from '~/lib'
 import '~/styles/globals.css'
 
 const inter = Inter({
+  preload: false,
   subsets: ['latin'],
   weight: ['300', '500', '700', '900']
 })
