@@ -3,7 +3,6 @@ import type { ReactNode } from 'react'
 
 import { Navbar, Providers } from '~/components'
 import Toaster from '~/components/ui/Toast'
-import { cn } from '~/lib'
 import '~/styles/globals.css'
 
 const inter = Inter({
@@ -15,11 +14,10 @@ const inter = Inter({
 
 const RootLayout = ({ children }: { children: ReactNode }) => {
   return (
-    <html
-      lang='en'
-      className={cn('bg-slate-50 text-slate-900 antialiased', inter.variable)}
-    >
-      <body className='min-h-screen bg-slate-50 antialiased dark:bg-slate-900'>
+    <html lang='en'>
+      <body
+        className={`${inter.variable} min-h-screen bg-slate-50 text-slate-900 antialiased dark:bg-slate-900`}
+      >
         <Providers>
           {/* @ts-expect-error Server Component */}
           <Navbar />
