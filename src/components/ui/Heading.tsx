@@ -23,7 +23,13 @@ interface HeadingProps
 
 const Heading: FC<HeadingProps> = forwardRef<HTMLHeadingElement, HeadingProps>(
   ({ className, size, ...rest }, ref) => {
-    return <h1 ref={ref} {...rest} className={cn(headingVariants({ size }))} />
+    return (
+      <h1
+        ref={ref}
+        {...rest}
+        className={cn(headingVariants({ size, className }))}
+      />
+    )
   }
 )
 
